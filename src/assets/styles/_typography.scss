@@ -1,0 +1,97 @@
+//Costomization
+
+//Line Height
+$line-height-sm: $LINEHEIGHT-3;
+$line-height-base: $LINEHEIGHT-2;
+$line-height-lg: $LINEHEIGHT-1;
+
+//Import bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+
+//Body
+body {
+  //font family
+  font-family: $font-family-base;
+  //Weight
+  font-weight: $font-weight-base;
+}
+
+//Heading
+@mixin headings($weight) {
+  font-family: $headings-font-family;
+  font-weight: $weight;
+  margin: 0;
+}
+
+h1,
+.h1 {
+  @include headings($HEAVY);
+}
+
+h2,
+.h2 {
+  @extend .h1;
+}
+
+h3,
+.h3 {
+  @include headings($XBLACK);
+}
+
+h4,
+.h4 {
+  @extend .h3;
+}
+
+h5,
+.h5 {
+  @extend .h3;
+}
+
+h6,
+.h6 {
+  @extend .h3;
+  font-size: $h6-font-size;
+}
+
+//Titles
+@mixin title($font-size, $weight: $BOLD) {
+  font-weight: $weight;
+  font-size: $font-size;
+}
+
+.t1 {
+  @include title($font-size: $title1-font-size, $weight: $title1-font-weight);
+}
+
+.t2 {
+  @include title($font-size: $title2-font-size);
+}
+
+.t3 {
+  @include title($font-size: $title3-font-size);
+}
+
+.t4 {
+  @include title($font-size: $title4-font-size);
+}
+
+.t5 {
+  @include title($font-size: $title5-font-size);
+}
+
+//Subtitles
+@mixin subtitle($font-size) {
+  font-weight: $MEDIUM;
+  font-size: $font-size;
+}
+
+.sub1 {
+  @include subtitle($subtitle1-font-size);
+}
+
+
+.sub2 {
+  @include subtitle($subtitle2-font-size);
+}

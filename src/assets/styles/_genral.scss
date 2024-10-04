@@ -1,0 +1,95 @@
+//containers margin
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+p {
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+
+  > .row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+  }
+
+  > .body-container {
+    /* 360px */
+    min-width: $body-min-width;
+
+    /* 1200px */
+    max-width: $body-max-width;
+    margin: 0 auto;
+
+    > .row {
+      --bs-gutter-x: 0;
+      --bs-gutter-y: 0;
+    }
+  }
+
+
+}
+
+footer {
+  /* 360px */
+  min-width: $body-min-width;
+
+  > .container {
+    max-width: $body-max-width;
+    margin: 0 auto;
+    /* 360px */
+    min-width: $body-min-width;
+  }
+}
+
+//the main padding of sides
+.container {
+  padding-left: $section-padding-x-lg;
+  padding-right: $section-padding-x-lg;
+  @media (max-width: 575.98px) {
+    padding-left: $section-padding-x-sm;
+    padding-right: $section-padding-x-sm;
+  }
+}
+
+
+//icons
+.icon-xsm {
+  @include size($xsm-icon-size);
+}
+
+.icon-sm {
+  @include size($sm-icon-size)
+}
+.icon-md {
+  @include size($md-icon-size);
+}
+
+.icon-lg {
+  @include size($lg-icon-size);
+}
+
+//buttons
+.btn {
+  &:focus,
+  &:active {
+    box-shadow: none !important;
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+//Import the functions and variables
+@import "../../../node_modules/bootstrap/scss/_functions";
+@import "../../../node_modules/bootstrap/scss/_variables";
+
+//Colors palette
+$theme-colors-custom: (
+        "secondary-1": #24099a,
+        "secondary-1-light": $secondary-1-light,
+        "secondary-1-lighter": $secondary-1-lighter,
+        "secondary-2": $secondary-2,
+        "secondary-2-light": $secondary-2-light,
+        "secondary-2-lighter": $secondary-2-lighter,
+        "accent": $accent,
+        "accent-light": $accent-light,
+        "accent-lighter": $accent-lighter,
+        "link": $link,
+        "link-light": $link-light,
+        "link-lighter": $link-lighter,
+        "warning": $warning,
+        "warning-light": $warning-light,
+        "warning-lighter": $warning-lighter,
+        "success": $success,
+        "success-light": $success-light,
+        "success-lighter": $success-lighter,
+        "danger": $danger,
+        "danger-light": $danger-light,
+        "danger-lighter": $danger-lighter,
+        "gray-dark": $gray-dark,
+        "gray-medium-dark": $gray-medium-dark,
+        "gray-medium": $gray-medium,
+        "gray-light-medium": $gray-light-medium,
+        "gray-light": $gray-light,
+        "gray-lighter": $gray-lighter,
+        "white": $white,
+);
+
+//Merging theme colors
+$theme-colors: map-merge($theme-colors-custom, $theme-colors);

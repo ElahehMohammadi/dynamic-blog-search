@@ -1,0 +1,119 @@
+//////BASE COLOR///////
+$text-color: $secondary-2;
+$headings-color: $secondary-2;
+
+//////FONT WEIGHT//////
+//fixme
+$HEAVY: 900;
+$XBLACK: 800;
+$BOLD: 700;
+$MEDIUM: 500;
+// font-Weight-base (body)
+$font-weight-base: $MEDIUM;
+//Title1 weight
+$title1-font-weight: $XBLACK;
+
+////////LINE HEIGHT////////
+$LINEHEIGHT-1: 2;
+$LINEHEIGHT-2: 1.75;
+$LINEHEIGHT-3: 1.5;
+$h1-lineheight: 2.75;
+$h5-lineheight: 4;
+///////FONT FAMILY/////////
+//heading
+$headings-font-family: 'IranYekanX', serif;
+//body (font-family-base)
+$font-family-base: 'IranSansX', sans-serif;
+
+//////////FONT SIZES/////////
+//H6 size
+$h6-font-size: 1.125rem;
+//Titles font sizes
+$title1-font-size: 1.375rem;
+$title2-font-size: 1.125rem;
+$title3-font-size: 1rem;
+$title4-font-size: 0.875rem;
+$title5-font-size: 0.75rem;
+//Subtitles font sizes
+$subtitle1-font-size: 0.875rem;
+$subtitle2-font-size: 0.75rem;
+
+///////////OTHER SIZES//////////
+///body width
+$body-max-width: 75rem;
+$body-min-width: 22.5rem;
+$main-heading-width: 29rem;
+//icons size
+$xsm-icon-size: 1.125rem;
+$sm-icon-size: 1.13rem;
+$md-icon-size: 1.25rem;
+$lg-icon-size: 1.5rem;
+///nav menu icon width
+$menu-icon-border-width: 0.063rem;
+///menu button dimention(?)
+$menu-btn-dimention: 2.313rem;
+///heading lines
+$heading-line-width: 1.5rem;
+$heading-line-height: 0.375rem; //6px
+///open state line
+$open-state-width: 1rem;
+$open-state-height: 0.125rem; //2px
+$open-state-percent-width: 28%;
+///>sm
+$search-container-lg-width: 35rem;
+//<sm
+$search-container-sm-width: 20rem;
+// dropdown menu height
+$dropdown-menu-height: 12rem;
+
+///////////RADIUS//////////
+//btn radius
+$btn-border-radius-custom: 0.5rem;
+$heading-line-radius: 0.25rem;
+$radius-10px: 0.625rem;
+$radius-20px: 20px;
+$radius-16px: 1rem;
+
+/////////SPACING///////////
+////////general spacing
+$space-8px: 0.5rem;
+$space-10px: 0.625rem;
+$space-12px: 0.75rem;
+$space-16px: 1rem;
+$space-20px: 1.25rem;
+$space-40px: 2.5rem;
+$space-48px: 3rem;
+////padding
+$phone-icon-padding: 0.531rem;
+$section-padding-x-lg: 1.25rem;
+$section-padding-x-sm: 1rem;
+//card body padding
+$card-body-padding: 16px 20px;
+// drop down items padding
+$dropdown-item-padding: 0.375rem;
+
+/////margin
+//main nav top margin
+$top-margin-lg: 0.69rem;
+
+/////gap
+//login btn gap
+$login-btn-gap: 0.375rem;
+
+
+//footer-gap
+$footer-gap: 2.5rem;
+//small heading gaps
+$sm-heading-gap: 1.75rem;
+
+//////////ETC/////////
+///time
+$arrowdown-rotation-time: 0.2s;
+$dropdown-menu-time: 0.5s;
+$card-hover-time: 0.5s;
+///shadow
+$dropdown-menu-shadow: 0rem 0rem 2rem 0rem rgba(
+        $color: $shadow-color,
+        $alpha: 24%,
+);
+

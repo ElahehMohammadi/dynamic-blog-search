@@ -1,0 +1,54 @@
+// seach filters icon rotate
+@keyframes rotate-in {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate-out {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+// Mixin icon size
+@mixin size($size) {
+  width: $size;
+  height: $size;
+}
+
+
+
+//flexbox
+@mixin flexbox(
+  $flex-direction: null,
+  $justify-content: null,
+  $align-items: null,
+  $align-content: null,
+  $gap: null
+) {
+  display: flex;
+
+  @if $flex-direction != null {
+    flex-direction: $flex-direction;
+  }
+  @if $justify-content != null {
+    justify-content: $justify-content;
+  }
+  @if $align-items != null {
+    align-items: $align-items;
+  }
+  @if $align-content != null {
+    align-content: $align-content;
+  }
+  @if $gap != null {
+    gap: $gap;
+  }
+}
+

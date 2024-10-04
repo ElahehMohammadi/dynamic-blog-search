@@ -1,0 +1,160 @@
+///navbar-section
+header > .container {
+  padding-top: $space-20px;
+  padding-bottom: $space-20px;
+  @media (min-width: 576px) {
+    margin-top: $top-margin-lg;
+  }
+
+  .navbar {
+    transform: none;
+
+
+    .nav-container {
+      @include flexbox($flex-direction: row, $justify-content: space-between, $align-items: center);
+      flex-grow: 1;
+
+      .btn {
+        --bs-btn-padding-x: 0;
+        --bs-btn-padding-y: 0;
+        border: 0;
+        padding: $space-8px $space-10px $space-8px $space-12px;
+        @media (max-width: 767.98px) {
+          padding: $phone-icon-padding;
+        }
+
+        &--container {
+          @include flexbox($flex-direction: row, $align-items: center, $justify-content: space-between, $gap: $login-btn-gap);
+
+        }
+
+        //loging btn (only icon)
+        @media (max-width: 767.98px) {
+          &--icon {
+            @include size($md-icon-size);
+          }
+        }
+      }
+
+      // navbar toggle menu icon
+      .navbar-toggler {
+
+
+        border: $menu-icon-border-width solid $secondary-2;
+
+        color: $secondary-2;
+      }
+
+      .offcanvas {
+        //--bs-offcanvas-width: auto;
+
+        .offcanvas-header {
+          flex-shrink: 1;
+
+          .btn {
+            img {
+              color: $secondary-2;
+            }
+
+            &:first-child:active {
+              border: 0;
+            }
+          }
+        }
+
+        .offcanvas-body {
+          .navbar-nav {
+            padding: 0;
+            margin: 0;
+            @media (max-width: 767.98px) {
+              height: 100%;
+              flex: 1 0 auto;
+              gap: $space-8px;
+              justify-content: flex-start;
+              align-items: stretch;
+
+              .nav-item {
+                border-radius: $btn-border-radius-custom;
+
+                &.is-open {
+                  background-color: $gray-light;
+                }
+              }
+            }
+            //Nav items
+            .nav-item {
+              padding: $space-8px $space-10px $space-8px $space-12px;
+              // for the open state line
+              position: relative;
+
+              p {
+                margin: 0;
+              }
+
+              &.is-open {
+
+                p {
+                  @extend .t4;
+                  color: $secondary-1;
+                }
+
+                .open-state {
+                  opacity: 1;
+                }
+              }
+
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+
+
+  //open navbar item (open state)
+  .open-state {
+    content: '';
+    display: block;
+    position: absolute;
+    //the width can be relative to the width of the text
+    width: $open-state-percent-width;
+    //or not
+    // width: $open-state-width;
+    height: $open-state-height;
+    border-radius: 1px;
+    background-color: $secondary-1;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: -50%;
+    // transition: opacity 0.3s ease;
+  }
+
+
+}
+
+.breadcrumb-section > .container {
+
+  @media (max-width: 767.98px) {
+    gap: $space-20px;
+    padding-top: $space-20px;
+  }
+  padding-top: $space-40px;
+
+  .breadcrumb {
+
+    gap: $space-8px;
+
+    .breadcrumb-item {
+      a {
+        color: $secondary-2 !important;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
