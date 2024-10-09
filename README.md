@@ -22,4 +22,4 @@ A dynamic blog search page that fetches blog posts from an API, allowing filteri
 ## نحوه اجرا
 1. پروژه را کلون کنید.
 2. دستور `npm install` را اجرا کنید تا وابستگی‌ها نصب شوند.
-3. فایل `index.html` را در مرورگر باز کنید.
+3. دستور `npm start` را اجرا کنید تا پروژه در محیط توسعه اجرا شود.
